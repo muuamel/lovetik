@@ -1,9 +1,10 @@
-from lovetik import *#to import the lib
+import lovetiklib
+from lovetiklib import *#to import the lib
 
 a = TikTok().Vid("https://vm.tiktok.com/ZM2FdEuwu/?t=2") #Creat Var To send data-Link To Vid Function
 
 print(a) #Shows All List
-
+#amo
 #print(a['Video']) #Get Video List
 
 print(a['Video']['cover']) #Get Cover Vid
