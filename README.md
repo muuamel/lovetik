@@ -1,4 +1,4 @@
-<h1 align="center">lovetiklib</h1>
+<h1 align="center">LoveTikLib</h1>
 <p align="center">With This Package Can You Download Any TikTok Video from lovetik.com</p>
 
 ## Installation :
