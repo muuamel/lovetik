@@ -31,10 +31,10 @@ setup(
         "Operating System :: MacOS :: MacOS X",
         "Operating System :: Microsoft :: Windows",
     ],
-    url='https://github.com/muamelAmeer/tiktokdow',
+    url='https://github.com/muamelAmeer/lovetik-lib',
     project_urls={
-        'Source': 'https://github.com/muamelAmeer/tiktokdow',
+        'Source': 'https://github.com/muamelAmeer/lovetik-lib',
         'Dev Lib': 'https://github.com/muamelAmeer',
-        'Documentation': 'https://github.com/muamelAmeer/tiktokdow'
+        'Documentation': 'https://github.com/muamelAmeer/lovetik-lib'
     },
 )
