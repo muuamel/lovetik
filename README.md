@@ -11,7 +11,7 @@ import lovetik #to import the lib
 
 bot = TikTOk()
 
-link = "Paste here the url foe video, gat from tiktok.com" #Ex: https://vm.tiktok.com/ZM2FdEuwu/?t=2
+link = "Paste here the url foe video, get from tiktok.com" #Ex: https://vm.tiktok.com/ZM2FdEuwu/?t=2
 
 a = link.Vid(link) #Creat Var To send data-Link To Vid Function
 
