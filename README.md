@@ -1,14 +1,14 @@
-<h1 align="center">lovetik</h1>
+<h1 align="center">lovetiklib</h1>
 <p align="center">With This Package Can You Download Any TikTok Video from lovetik.com</p>
 
 ## Installation :
 ```bash
-pip install lovetik
+pip install lovetiklib
 ```
 ### Example
 ```python
-import lovetik
-from lovetik import *#to import the lib
+import lovetiklib
+from lovetiklib import *#to import the lib
 
 a = TikTok().Vid("https://vm.tiktok.com/ZM2FdEuwu/?t=2") #Creat Var To send data-Link To Vid Function
 
