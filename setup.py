@@ -13,7 +13,7 @@ LONG_DESCRIPTION = 'With This Package Can You Download Any TikTok Video from lov
 
 # Setting up
 setup(
-    name="lovetik",
+    name="lovetiklib",
     version=VERSION,
     author="Muamel Ameer",
     author_email="amowallet@gmail.com",
