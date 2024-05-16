@@ -1,42 +1,39 @@
-<h1 align="center">LoveTikLib</h1>
-<p align="center">With This Package Can You Download Any TikTok Video from lovetik.com</p>
-
-## Installation :
-```bash
-pip install lovetiklib
+# Install:
+```commandline
+git clone +repo link
 ```
-### Example
+
+# About this project:
+- lovetik is use:
+- lovetik ( [lovetik.com](https://lovetik.com) )
+- Supporting Sync & Async.
+- Thanks to @zaid505 cuz i'm get the idea for type.py file from him
+
+# How to use?
+- Here an example to use it:
 ```python
-import lovetiklib
-from lovetiklib import *#to import the lib
+from lovetik import client
 
-a = TikTok().Vid("https://vm.tiktok.com/ZM2FdEuwu/?t=2") #Creat Var To send data-Link To Vid Function
+cli = client()
+url = 'https://vm.tiktok.com/ZMMj9fmyS/'
 
-print(a) #Shows All List
-
-#print(a['Video']) #Get Video List
-
-print(a['Video']['cover']) #Get Cover Vid
-
-print(a['Video']['vidID']) #Get ID The Vid
-
-print(a['Video']['desc']) #Get Descrption
-
-print(a['Video']['link']) #Get MP4 File Link
-
-print(a['Video']['audioName']) #Get Audeo Name
-
-print(a['Video']['audioLink']) #Get Audio Link
-
-print(a['Video']['authorUser']) #Get author UserName
-
-print(a['Video']['authorName']) #Get author Name
-
-print(a['Video']['authorImage']) #Get author Photo
+info    =  cli.get(url) # Result : info about video as :  Dict {}
+download = cli.save(link = info.mp3, type = 'mp3', name = 'audio') # Result : info about downloading status as  :   Dict {}.  NOTE: u can use save method with (cover , avater , mp3 , mp4 , mp4_rights). ex : info.avatar
 
 ```
-#
-### Follow us on social media accounts
+- Here an async example:
+```python
+from lovetik import async_client
+import asyncio
 
-* telegram : @s_y_e
-* github : https://github.com/MuamleAmeer
+cli = async_client()
+url = 'https://vm.tiktok.com/ZMMj9fmyS/'
+
+async def main():
+    info = await cli.get(url) # to get the info about vid
+    print(
+        await cli.save(info.cover,'jpg') # to save the cover of vid
+    )
+
+asyncio.run(main())
+```
