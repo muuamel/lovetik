@@ -7,7 +7,7 @@ git clone https://github.com/mooamel/lovetik.git
 - lovetik is use:
 - lovetik ( [lovetik.com](https://lovetik.com) )
 - Supporting Sync & Async.
-- Thanks to [@zaid505](https://github.com/zaid5o5) cuz i'm get the idea for type.py file from him ( [Source](https://github.com/zaid5o5/trengine/blob/main/trengine/types.py) ).
+- Thanks to [@zaid505](https://github.com/zaid5o5) cuz i'm get the idea for *[type.py](https://github.com/mooamel/lovetik/blob/main/lovetik/type.py)* file from him ( [Source](https://github.com/zaid5o5/trengine/blob/main/trengine/types.py) ).
 
 # How to use?
 - Here an example to use it:
