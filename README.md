@@ -1,6 +1,6 @@
 # Install:
 ```commandline
-git clone +repo link
+git clone https://github.com/mooamel/lovetik.git
 ```
 
 # About this project:
