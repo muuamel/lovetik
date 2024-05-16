@@ -1,26 +1,30 @@
-import lovetiklib
-from lovetiklib import *#to import the lib
 
-a = TikTok().Vid("https://vm.tiktok.com/ZM2FdEuwu/?t=2") #Creat Var To send data-Link To Vid Function
+"""
+  sync client :
+"""
 
-print(a) #Shows All List
-#amo
-#print(a['Video']) #Get Video List
+from lovetik import client
 
-print(a['Video']['cover']) #Get Cover Vid
+cli = client()
+url = 'https://vm.tiktok.com/ZMMj9fmyS/'
 
-print(a['Video']['vidID']) #Get ID The Vid
+info    =  cli.get(url) # Result : info about video as :  Dict {}
+download = cli.save(link = info.mp3, type = 'mp3', name = 'audio') # Result : info about downloading status as  :   Dict {}.  NOTE: u can use save method with (cover , avater , mp3 , mp4 , mp4_rights). ex : info.avatar
 
-print(a['Video']['desc']) #Get Descrption
 
-print(a['Video']['link']) #Get MP4 File Link
+"""
+  async client :
+"""
+from lovetik import async_client
+import asyncio
 
-print(a['Video']['audioName']) #Get Audeo Name
+cli = async_client()
+url = 'https://vm.tiktok.com/ZMMj9fmyS/'
 
-print(a['Video']['audioLink']) #Get Audio Link
+async def main():
+    info = await cli.get(url) # to get the info about vid
+    print(
+        await cli.save(info.cover,'jpg') # to save the cover of vid, u can use (cover , avater , mp3 , mp4 , mp4_rights) also
+    )
 
-print(a['Video']['authorUser']) #Get author UserName
-
-print(a['Video']['authorName']) #Get author Name
-
-print(a['Video']['authorImage']) #Get author Photo
+asyncio.run(main())
